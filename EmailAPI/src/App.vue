@@ -2,7 +2,6 @@
   <div id="app">
     <HomePage :user="user" @update-user="updateUser"/>
     <header>
-      <HomePage/>
     </header>
     <main>
       <router-view/>

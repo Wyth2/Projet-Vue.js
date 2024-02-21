@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to our Home Page!</h1>
+    <h1>Welcome to the Email manager!</h1>
     <SigninComponent @update-user="updateUser" />
   </div>
 </template>

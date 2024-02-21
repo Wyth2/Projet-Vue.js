@@ -1,12 +1,16 @@
 <template>
-    <div>
-      <button v-if="user" @click="signInAndGetUser">Sign in</button>
-      <button v-else @click="signOut">Sign out</button>
+  <div>
+    <button v-if="user" @click="signInAndGetUser">Sign in with Microsoft</button>
+    <div v-else>
+      Welcome, {{ user.name }} ({{ user.email }})
+      <button @click="signOut">Sign out</button>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script>
-  import { signInAndGetUser, signOut } from '../lib/microsoftGraph';
+  import { signInAndGetUser, signOutUser } from '../lib/microsoftGraph';
   import { userKey } from '../key.js';
   
   export default {
@@ -28,7 +32,7 @@
         localStorage.setItem(userKey, JSON.stringify(authResult.account));
       },
       signOut() {
-        signOut();
+        signOutUser();
         this.setUser(null);
         localStorage.removeItem(userKey);
       },
