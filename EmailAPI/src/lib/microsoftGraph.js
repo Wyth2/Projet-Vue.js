@@ -39,6 +39,6 @@ export async function signInAndGetUser () {
 }
 
 export async function signOutUser () {
-  const authResult = await msalInstance.logoutPopup(logoutRequest )
+  const authResult = await msalInstance.logout(logoutRequest )
   return authResult
 }

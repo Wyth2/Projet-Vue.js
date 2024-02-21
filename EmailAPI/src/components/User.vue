@@ -6,6 +6,7 @@
   
   <script>
   export default {
+    name:'UserComponent',
     data() {
       return {
         user: null,

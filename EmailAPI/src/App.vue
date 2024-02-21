@@ -14,13 +14,9 @@
 <script>
 import HomePage from './components/HomePage.vue'
 import { userKey } from './key.js';
-import { mapState } from 'vuex';
 
 export default {
   name: 'App',
-  computed: {
-    ...mapState('user', ['name']),
-  },
   components: {
     HomePage,
   },
