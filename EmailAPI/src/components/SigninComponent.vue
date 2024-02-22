@@ -1,9 +1,9 @@
 <template>
   <div>
-    <button v-if="!user" @click="signInAndGetUser">Sign in with Microsoft</button>
+    <button v-if="!isAuthenticated" @click="signInAndGetUser">Sign in with Microsoft</button>
     <div v-else>
       Welcome, {{ user.name }} ({{ user.email }})
-      <button @click="signOutUser">Sign out</button>
+      <button @click="signOut">Sign out</button>
     </div>
   </div>
 </template>
@@ -24,16 +24,23 @@ export default {
       default: () => {},
     },
   },
+  data() {
+    return {
+      isAuthenticated: false,
+    };
+  },
   methods: {
     async signInAndGetUser() {
       const authResult = await signInAndGetUser();
       this.setUser(authResult.account);
       localStorage.setItem(userKey, JSON.stringify(authResult.account));
+      this.isAuthenticated = true; // Utilisateur connecté
     },
     signOut() {
       signOutUser();
       this.setUser(null);
       localStorage.removeItem(userKey);
+      this.isAuthenticated = false; // Utilisateur déconnecté
     },
   },
 };

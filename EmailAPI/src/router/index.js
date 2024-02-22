@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '../components/HomePage.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '../components/HomePage.vue';
 import EmailList from '../components/EmailList.vue';
 import EmailDetails from '../components/EmailDetails.vue';
 
@@ -7,21 +7,30 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomePage
+    component: HomePage,
   },
   {
-    path: '/HomePage',
+    path: '/conversations', // Utilisation de '/conversations' à la place de '/HomePage'
     name: 'Conversations',
-    component: () => import('../components/HomePage.vue')
+    component: HomePage,
+  },
+  {
+    path: '/emails', // Utilisation de '/emails' à la place de '/'
+    name: 'EmailList',
+    component: EmailList,
+  },
+  {
+    path: '/email/:id',
+    name: 'email-detail',
+    component: EmailDetails,
+    props: true,
   },
 
-  { path: '/', component: EmailList },
-  { path: '/email/:id', name: 'email-detail', component: EmailDetails, props: true },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

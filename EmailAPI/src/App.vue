@@ -2,7 +2,6 @@
   <div id="app">
     <HomePage :user="user" @update-user="updateUser"/>
     <EmailList />
-    <EmailForm />
     <main>
       <router-view/>
     </main>
@@ -13,14 +12,12 @@
 import HomePage from './components/HomePage.vue'
 import { userKey } from './key.js';
 import EmailList from './components/EmailList.vue';
-import EmailForm from './components/EmailForm.vue';
 
 export default {
   name: 'App',
   components: {
     HomePage,
      EmailList,
-    EmailForm
   },
   data() {
     return {
