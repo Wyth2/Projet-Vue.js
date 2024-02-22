@@ -45,3 +45,48 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  /* Add your specific styles here */
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  div button {
+    background-color: #e74c3c;
+    margin-top: 10px;
+  }
+
+  div button:hover {
+    background-color: #c0392b;
+  }
+
+  div div {
+    margin-top: 20px;
+  }
+
+  div div button {
+    background-color: #3498db;
+    margin-top: 10px;
+  }
+
+  div div button:hover {
+    background-color: #2980b9;
+  }
+</style>
+

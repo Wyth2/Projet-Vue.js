@@ -49,12 +49,13 @@ export default {
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  font-family: 'Avenir', 'Helvetica', 'Arial', sans-serif;
+  color: #333; /* Changed text color to a darker shade for better readability */
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  background-color: #f5f5f5; /* Set a light background color */
 }
 
 header {
@@ -62,20 +63,21 @@ header {
   max-width: 1200px;
   padding: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Change to space-between to evenly distribute items */
+  align-items: center; /* Align items vertically centered */
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
 }
 
 header a {
-  color: #2c3e50;
+  color: #3498db; /* Change link color to a shade of blue */
   text-decoration: none;
   margin-right: 20px;
   transition: color 0.3s ease;
 }
 
 header a:hover {
-  color: #42b983;
+  color: #2980b9; /* Change link color on hover */
 }
 
 main {
@@ -96,4 +98,5 @@ footer {
   justify-content: center;
   border-top: 1px solid #ddd;
 }
+
 </style>

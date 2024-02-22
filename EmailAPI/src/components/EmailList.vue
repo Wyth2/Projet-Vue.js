@@ -65,6 +65,57 @@ export default {
 };
 </script>
 
-<style>
-/* Add your styles if needed */
+<style scoped>
+  /* Add your specific styles here */
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  router-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  router-link:hover {
+    color: #2980b9;
+  }
 </style>
