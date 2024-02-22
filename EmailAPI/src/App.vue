@@ -1,24 +1,26 @@
 <template>
   <div id="app">
     <HomePage :user="user" @update-user="updateUser"/>
-    <header>
-    </header>
+    <EmailList />
+    <EmailForm />
     <main>
       <router-view/>
     </main>
-    <footer>
-    </footer>
   </div>
 </template>
 
 <script>
 import HomePage from './components/HomePage.vue'
 import { userKey } from './key.js';
+import EmailList from './components/EmailList.vue';
+import EmailForm from './components/EmailForm.vue';
 
 export default {
   name: 'App',
   components: {
     HomePage,
+     EmailList,
+    EmailForm
   },
   data() {
     return {

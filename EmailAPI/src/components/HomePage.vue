@@ -1,22 +1,18 @@
 <template>
   <div>
     <h1>Welcome to the Email manager!</h1>
-    <UserComponent @update-user="updateUser">
-     </UserComponent>
     <SigninComponent @update-user="updateUser" />
   </div>
 </template>
 
 <script>
 import SigninComponent from './SigninComponent.vue';
-import UserComponent from './User.vue';
 
 
 export default {
   name: 'HomePage',
   components: {
     SigninComponent,
-    UserComponent,
   },
    data() {
     return {
