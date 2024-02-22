@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@vue/cli": "^5.0.8"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve"
+  }
+}
+

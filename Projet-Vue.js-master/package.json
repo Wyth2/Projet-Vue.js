@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@azure/msal-browser": "^3.9.0",
+    "vue": "^3.4.19",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve"
+  }
+}
+
+
