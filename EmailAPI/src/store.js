@@ -26,12 +26,20 @@ const store = createStore({
     deleteEmail({ commit }, index) {
       commit('deleteEmail', index);
     },
-    setMaxEmails({ commit }, maxEmails) {
-      commit('updateMaxEmails', maxEmails);
-    },
   },
   getters: {
     getEmails: (state) => state.emails.slice(0, state.maxEmailsToShow),
+    getFilteredEmails: (state) => (searchCriteria) => {
+      const filteredEmails = state.emails.filter((email) => {
+        const matchesSender = !searchCriteria.searchSender || email.sender.toLowerCase().includes(searchCriteria.searchSender.toLowerCase());
+        const matchesKeyword = !searchCriteria.searchKeyword || email.subject.toLowerCase().includes(searchCriteria.searchKeyword.toLowerCase()) || email.body.toLowerCase().includes(searchCriteria.searchKeyword.toLowerCase());
+        const matchesDateTime = !searchCriteria.searchDateTime || new Date(email.dateTime) >= new Date(searchCriteria.searchDateTime);
+
+        return matchesSender && matchesKeyword && matchesDateTime;
+      });
+      
+      return filteredEmails.slice(0, state.maxEmailsToShow);
+    },
   },
 });
 

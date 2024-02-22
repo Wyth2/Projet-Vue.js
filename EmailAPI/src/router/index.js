@@ -10,12 +10,12 @@ const routes = [
     component: HomePage,
   },
   {
-    path: '/conversations', // Utilisation de '/conversations' à la place de '/HomePage'
+    path: '/conversations', 
     name: 'Conversations',
     component: HomePage,
   },
   {
-    path: '/emails', // Utilisation de '/emails' à la place de '/'
+    path: '/emails', 
     name: 'EmailList',
     component: EmailList,
   },
