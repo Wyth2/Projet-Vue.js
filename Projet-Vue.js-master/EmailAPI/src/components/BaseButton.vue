@@ -68,14 +68,14 @@ button:focus {
 }
 
 .btn-warn:hover {
-  background-color: #e0913d;
+  background-color: #yellow;
 }
 
 .btn-danger {
-  background-color: #e74c3c;
+  background-color: #orange;
 }
 
 .btn-danger:hover {
-  background-color: #cf3d33;
+  background-color: #red;
 }
 </style>
