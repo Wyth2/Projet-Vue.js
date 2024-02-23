@@ -127,12 +127,12 @@ li {
 }
 
 router-link {
-  color: #3498db;
+  color: #yellow;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 router-link:hover {
-  color: #2980b9;
+  color: #red;
 }
 </style>
