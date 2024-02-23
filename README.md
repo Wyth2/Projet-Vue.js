@@ -1,7 +1,7 @@
 # Projet-Vue.js
 Participants: Ewen SEGUI
-              William TRUGUET
-              David MESSAGE
+              William TRUGUET = Wyth2
+              David MESSAGE = Darwin 1001
 
 
 # Notre projet: 
