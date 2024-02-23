@@ -127,12 +127,20 @@ li {
 }
 
 router-link {
+<<<<<<< HEAD
   color: #yellow;
+=======
+  color: #3498db;
+>>>>>>> c27177dd2a554856c2d2663dfcbaeace161cdc3b
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 router-link:hover {
+<<<<<<< HEAD
   color: #red;
+=======
+  color: #2980b9;
+>>>>>>> c27177dd2a554856c2d2663dfcbaeace161cdc3b
 }
 </style>
