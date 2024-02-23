@@ -4,7 +4,8 @@ Participants: Ewen SEGUI
               David MESSAGE
 
 
-# Notre projet: notre site respecte les consignes données dans l'énoncé du projet en revanche certaines étapes n'ont pas pu être faite soit par manque de temps soit car nous n'avons pas réussi à les faire, parmi ces étapes les suivantes ne fonctionne pas ou n'ont pas pu être faite:
+# Notre projet: 
+notre site respecte les consignes données dans l'énoncé du projet en revanche certaines étapes n'ont pas pu être faite soit par manque de temps soit car nous n'avons pas réussi à les faire, parmi ces étapes les suivantes ne fonctionne pas ou n'ont pas pu être faite:
 - Authentification avec Google (pas réussi à le faire et nous n'avions pas compris comment faire)
 - Affichages des informations des Email dans une autre page (nous n'avons pas réussi à faire en sorte que les informations d'un Email s'affiche dans une autre page)
 - Filtres des Emails (la fonctionnalité permettant de filtrer les Emails ne fonctionne pas malgré de nombreuse tentative dans le code du projet et dans le rendu sur le naviguateur)
