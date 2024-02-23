@@ -15,4 +15,4 @@ notre site respecte les consignes données dans l'énoncé du projet en revanche
   - Ecriture d'un mail qui s'ajoute à la liste de mails
   - Fonctionnalité du choix du nombre d'Emails à afficher sur l'écran
  
-    Remarque: C'est moi Ewen SEGUI qui ai rédigé ce README, malheuresement mon github n'a pas fonctionné pendant tout la conception du projet ce qui ne pas permsi de faire aucun PUSH et c'est donc pour cela que j'ai utilisé le compte de William TRUGUET pour rédiger et envoyer le README.
+    Remarque: C'est moi Ewen SEGUI qui ai rédigé ce README, malheuresement mon github n'a pas fonctionné pendant tout la conception du projet ce qui ne pas permi de faire aucun PUSH et c'est donc pour cela que j'ai utilisé le compte de William TRUGUET pour rédiger et envoyer le README.
