@@ -1,7 +1,7 @@
-#Projet-Vue.js
+# Projet-Vue.js
 Participants: Ewen SEGUI William TRUGUET = Wyth2 David MESSAGE = Darwin 1001
 
-#Notre projet:
+# Notre projet:
 notre site respecte les consignes données dans l'énoncé du projet en revanche certaines étapes n'ont pas pu être faites soit par manque de temps soit car nous n'avons pas réussi à les faire. Parmi ces étapes les suivantes ne fonctionnent pas ou n'ont pas pu être faites :
 - Authentification avec Google (pas réussi à la faire et nous n'avions pas compris comment faire)
 - Affichages des informations des Emails dans une autre page (nous n'avons pas réussi à faire en sorte que les informations d'un Email s'affichent dans une autre page)
