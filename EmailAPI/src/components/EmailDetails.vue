@@ -2,9 +2,14 @@
 <template>
   <div>
     <h2>Email Details</h2>
-    <p><strong>Subject:</strong> {{ email.subject }}</p>
-    <p><strong>Sender:</strong> {{ email.sender }}</p>
-    <p><strong>Body:</strong> {{ email.body }}</p>
+    <template v-if="email">
+      <p><strong>To:</strong> {{ email.to }}</p>
+      <p><strong>Subject:</strong> {{ email.subject }}</p>
+      <p><strong>Body:</strong> {{ email.body }}</p>
+    </template>
+    <template v-else>
+      <p>Email not found</p>
+    </template>
   </div>
 </template>
 
@@ -12,7 +17,6 @@
 export default {
   computed: {
     email() {
-      // Utilisez le paramètre de route pour obtenir l'email spécifique à afficher
       const emailId = this.$route.params.id;
       return this.$store.getters.getEmailById(emailId);
     },

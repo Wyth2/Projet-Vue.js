@@ -10,6 +10,7 @@ const store = createStore({
   },
   mutations: {
     addEmail(state, email) {
+      email.id = Date.now(); // Assign a unique id to the email before adding it to the list
       state.emails.push(email);
     },
     deleteEmail(state, index) {
@@ -26,8 +27,15 @@ const store = createStore({
     deleteEmail({ commit }, index) {
       commit('deleteEmail', index);
     },
+    updateMaxEmails({ commit }, maxEmails) {
+      commit('updateMaxEmails', maxEmails);
+    },
   },
   getters: {
+  getEmailById: (state) => (id) => {
+    return state.emails.find(email => email.id === id);
+  },
+
     getEmails: (state) => state.emails.slice(0, state.maxEmailsToShow),
     getFilteredEmails: (state) => (searchCriteria) => {
       const filteredEmails = state.emails.filter((email) => {
@@ -37,7 +45,7 @@ const store = createStore({
 
         return matchesSender && matchesKeyword && matchesDateTime;
       });
-      
+
       return filteredEmails.slice(0, state.maxEmailsToShow);
     },
   },

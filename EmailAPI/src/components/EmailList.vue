@@ -51,18 +51,22 @@ export default {
       },
       maxEmails: 10, // Default number of emails to display
       searchCriteria: {
-        searchSender: '',
+        searchReceiver: '',
         searchKeyword: '',
         searchDateTime: '',
       },
     };
   },
   methods: {
-    sendEmail() {
+    async sendEmail() {
       // Add logic to send the email to the Vuex store
-      this.$store.dispatch('addEmail', this.newEmail);
+      await this.$store.dispatch('addEmail', this.newEmail);
       // Reset the form after sending
       this.newEmail = { to: '', subject: '', body: '' };
+
+      // Navigate to the details page of the newly created email
+      const newEmailId = this.$store.state.emails[this.$store.state.emails.length - 1].id;
+      this.$router.push({ name: 'email-detail', params: { id: newEmailId } });
     },
     updateMaxEmails() {
       // Update the maximum number of emails to display
@@ -83,7 +87,6 @@ export default {
 </script>
 
 <style scoped>
-/* Add your specific styles here */
 
 h1 {
   font-size: 24px;
