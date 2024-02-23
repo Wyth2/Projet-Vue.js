@@ -5,12 +5,12 @@ Participants: Ewen SEGUI
 
 
 # Notre projet: 
-notre site respecte les consignes données dans l'énoncé du projet en revanche certaines étapes n'ont pas pu être faite soit par manque de temps soit car nous n'avons pas réussi à les faire, parmi ces étapes les suivantes ne fonctionne pas ou n'ont pas pu être faite:
-- Authentification avec Google (pas réussi à le faire et nous n'avions pas compris comment faire)
-- Affichages des informations des Email dans une autre page (nous n'avons pas réussi à faire en sorte que les informations d'un Email s'affiche dans une autre page)
+notre site respecte les consignes données dans l'énoncé du projet en revanche certaines étapes n'ont pas pu être faites soit par manque de temps soit car nous n'avons pas réussi à les faire. Parmi ces étapes les suivantes ne fonctionnent pas ou n'ont pas pu être faites:
+- Authentification avec Google (pas réussi à la faire et nous n'avions pas compris comment faire)
+- Affichages des informations des Emails dans une autre page (nous n'avons pas réussi à faire en sorte que les informations d'un Email s'affiche dans une autre page)
 - Filtres des Emails (la fonctionnalité permettant de filtrer les Emails ne fonctionne pas malgré de nombreuse tentative dans le code du projet et observable dans le rendu sur le naviguateur)
 
-  Fonctionnalité réussi:
+  Fonctionnalités réussies:
   - Authentification et déconnexion avec Microsoft
   - Ecriture d'un mail qui s'ajoute à la liste de mails
   - Fonctionnalité du choix du nombre d'Emails à afficher sur l'écran
